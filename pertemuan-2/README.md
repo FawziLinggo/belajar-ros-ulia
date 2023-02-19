@@ -36,3 +36,19 @@
    ```bash
     $ rosrun rqt_graph rqt_graph
     ```
+9. Melihat message yang dikirimkan
+    ```bash
+    $ rostopic echo /turtle1/cmd_vel
+    ```
+10. cek tipe topic
+    ```bash
+    $ rostopic type /turtle1/cmd_vel
+    ```
+11. Meliat tipe message
+    ```bash
+    $ rosmsg show geometry_msgs/Twist
+    ```
+12. Publish message
+    ```bash
+    $ rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[2.0, 0.0, 0.0]' '[0.0, 0.0, 1.8]'
+    ```
